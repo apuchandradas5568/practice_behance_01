@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* global Css */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+:root{
+    --fc: rgba(0, 0, 0, 0.875);
+    --fs_1: 1rem;
+    --fs_2: 2rem;
+    --fs_3: .5rem;
+    --fc-white : white;
+    --color_pink: rgb(248, 137, 156);
+}
+
+a{
+    text-decoration: none;
+}
+
+/* custom Css Main */
+header{
+    background-image: url(../Photos/blue_background.jpg);
+    color: var(--fc-white);
+    font-weight: 500;
+    padding: 1rem 0;
+    height: 100vh;
+}
+.navigation_bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.main_logo{
+    font-size: 1.5rem;
+    background-color: var(--fc-white);
+    color: var(--fc) !important;
+    padding: .25rem 1rem;
+    border-radius: .25rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+nav > ul {
+    display: flex;
+}
+nav > ul > li{
+    list-style-type: none;
+    margin-right: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all .5s linear;
+}
+
+nav > ul > li:hover {
+    color: var(--color_pink);
+}
+
+.about_container{
+    display: flex;
+    /* justify-content:space-; */
+    align-items: center;
+    /* margin-left: rem; */
+    /* text-align: center; */
+    width: 80vw;
+    margin: auto;
+    overflow: none;
+    height: 80vh;
+}
+.sec_caption{
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.sec_title{
+    font-size: 3rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+.sec_text{
+    margin-bottom: 1rem;
+}
+select#loans, select > option, .about_container input[type = "button"]{
+    padding: 1rem;
+    width: 200px;
+    border: 1px solid var(--fc-white);
+    outline: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all .5s linear;
+    background: transparent;
+    color: var(--fc-white);
+}
+.about_container input[type = "button"]{
+    background-color: var(--color_pink);
+    font-weight: 600;
+    border: 1px var(--fc-white) solid;
+    color: var(--fc-white);
+}
